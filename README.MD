@@ -4,7 +4,7 @@
 
 <br/>
 
-# 🧑‍🍳🍲 **Bem-vindo ao Projeto Santos Locais Turísticos** 📚👨‍💻
+# 🌎 **Bem-vindo ao Projeto Santos Locais Turísticos** 🛫
 
 Este projeto é uma combinação de aprendizado e exploração de locais e cultura! Aqui, você pode praticar suas habilidades de desenvolvimento web HTML CSS enquanto descobre Locais incríveis para planejar sua próxima viagem! 🍽️✨
 
