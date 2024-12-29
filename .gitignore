@@ -1,0 +1,31 @@
+# Mac files
+.DS_Store
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains Rider
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+# Temporary files
+*.tmp
+*.temp
+
+# Arquivos de build
+node_modules/
+dist/
+out/
+*.log

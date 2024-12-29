@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home SantosQA</title>
+    <link rel="icon" type="image/png" href="/santos-locais-turisticos/assets/avatar.png" />
+    <link rel="stylesheet" href="/santos-locais-turisticos/css/style-home.css" />
+  </head>
+
+  <body>
+    <main role="main">
+      <h1 class="visually-hidden">Home SantosQA</h1>
+      <div id="container">
+        <div id="profile">
+          <img
+            src="./assets/avatar.png"
+            alt="Foto de Ricardo Santos QA, analista de testes incansável na caça aos Bugs! Está usando óculos e sorrindo para os bugs que encontrar com sua barba de testador desleixada, ele veste uma camiseta cinza e está pronto para caçar falhas no universo digital. Tudo isso com um fundo preto dramático nesta foto, claro!"
+          />
+          <p>@santosqa_</p>
+        </div>
+
+        <div
+          id="switch"
+          onclick="toggleMode()"
+          aria-label="Ícone para alternar o tema: lua com estrelas quando o tema é escuro e sol quando é claro"
+        >
+          <button role="button" aria-label="Alternar tema"></button>
+          <span></span>
+        </div>
+
+        <div id="social-links">
+          <a
+            href="#"
+            id="share-button"
+            aria-label="Opção para compartilhar esta página"
+          >
+            <ion-icon name="share-social"></ion-icon>
+          </a>
+
+          <a
+            href="https://www.santosqa.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Site Santos QA"
+          >
+            <ion-icon name="logo-wordpress"></ion-icon>
+          </a>
+          <a
+            href="https://github.com/santosqa"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/santosqa"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a
+            href="https://www.instagram.com/santosqa_"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a
+            id="whatsapp-share"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Compartilhar via Whatsapp"
+          >
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+
+          <a
+            href="https://www.apartamentovistamar.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Site Apartamento Vista mar"
+          >
+            <ion-icon name="globe-outline"></ion-icon>
+          </a>
+        </div>
+
+        <!-- Modal para opções de compartilhamento -->
+        <div id="share-modal" class="modal" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <button
+              class="close-button"
+              role="button"
+              aria-label="Fechar modal"
+            >
+              Fechar
+            </button>
+            <h2>Selecione o aplicativo para compartilhar</h2>
+            <div id="fallback-share-options">
+              <a
+                href="#"
+                id="linkedin-share"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Compartilhar no Linkedin"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a
+                id="whatsapp-share2"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Compartilhar via Whatsapp"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+              <a
+                href="#"
+                id="twitter-share"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Compartilhar no X"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a
+                href="#"
+                id="facebook-share"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Compartilhar no Facebook"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a
+                href="#"
+                id="email-share"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Compartilhar por e-mail"
+              >
+                <ion-icon name="mail"></ion-icon>
+              </a>
+              <a
+                href="#"
+                id="telegram-share"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Compartilhar no Telegram"
+              >
+                <ion-icon name="paper-plane"></ion-icon>
+              </a>
+              <a
+                href="#"
+                id="instagram-share"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Compartilhar no Instagram"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h3>Bem-vindo ao Projeto Santos Locais Turísticos 🌎</h3>
+
+        <div
+          id="description"
+          class="description"
+          aria-hidden="false"
+          aria-label="Descricao do projeto"
+        >
+          <p>
+            Prepare-se para explorar destinos únicos e incríveis em Praia Grande - SP!</p> <p> Embarque nessa jornada e descubra locais turísticos que vão maximizar sua aventura e tornar sua viagem inesquecível. 🌊🏖️
+          </p>
+        </div>
+        <!-- lista de links -->
+        <ul id="links-list">
+          <li>
+            <a
+              href="https://santosqa.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Página de links SantosQA. A página de links contém botões que irão direcionar para o site que for selecionado."
+            >
+              <img
+                src="./assets/icone-santos-qa.png"
+                alt="Ícone do Site Santos QA"
+              />
+              <span> Links Santos QA </span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/santos-locais-turisticos/pages/santos-locais-turisticos.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Praia Grande - SP"
+            >
+              <img
+                src="./assets/img-praia-grande.png"
+                alt="Ícone do prato Baião de dois"
+              />
+              <span>Praia Grande - SP</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              rel="noopener noreferrer"
+              aria-label="Novo local em breve!"
+            >
+              <img src="./assets/love.png" alt="Ícone interrogação" />
+              <span>Novo local em breve!</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p id="space">
+        <br />
+        Feito com <img src="../assets/heart.svg" alt="imagem de coração" /> por
+        <a href="https://santosqa.com" target="_blank" rel="noopener noreferrer" aria-label="site Santos QA">
+          @santosqa_
+        </a>
+      </p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/santos-locais-turisticos/script/script.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        console.log(' 🚀 🚀 🚀 🚀  🚀 🚀 🚀 🚀  🚀 🚀 🚀 🚀  🚀 🚀 🚀 🚀 ')
+      })
+    </script>
+  </body>
+</html>
